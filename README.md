@@ -6,4 +6,5 @@ This repository contains a Web Interface to Generate [CenturyLink Cloud](http://
 
 [View our detailed Knowledge Base article](https://www.centurylinkcloud.com/knowledge-base/blueprints/blueprint-package-manifest-builder-wizard/)
 
+View all underlying code from within the [gh-pages](https://github.com/CenturyLinkCloud/blueprint-package-manifest-builder/tree/gh-pages) branch.
 
