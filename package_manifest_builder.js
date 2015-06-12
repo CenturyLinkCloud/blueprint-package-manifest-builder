@@ -37,6 +37,9 @@ $("#built_els").droppable({
 
 			// System params.  These don't need any el_details
 			// TODO - add hidden name parameter to these on construction
+			case 'param_account':
+				GenerateSystemParamEl(ui.draggable[0].id,ui.helper,"Include the alias of the account that is initiating the deployment.","T3.Identity.Account");
+				break;
 			case 'param_user':
 				GenerateSystemParamEl(ui.draggable[0].id,ui.helper,"Include the control portal username that is initiating the deployment.","T3.Identity.User");
 				break;
@@ -291,6 +294,7 @@ function BuildManifest()
 			case ($(this).hasClass('param_server')):
 
 			// System params.  
+			case ($(this).hasClass('param_account')):
 			case ($(this).hasClass('param_user')):
 			case ($(this).hasClass('param_name')):
 			case ($(this).hasClass('param_ip')):
