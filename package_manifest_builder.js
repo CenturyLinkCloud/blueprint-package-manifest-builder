@@ -155,7 +155,7 @@ $("#export_bash_btn").click(function(){
 	install_sh = install_sh_tpl
 	variables = Array();
 	$.each(manifest_obj.variables,function(i){
-		variables.push(this.toUpperCase()+"=\"${"+(i+1)+"}\"\n");
+		variables.push(this.replace(/[^a-z0-9_-]/ig,"_").toUpperCase()+"=\"${"+(i+1)+"}\"\n");
 	});
 	install_sh = install_sh.replace(/<BEGINVARIABLES>/g,variables.join(""));
 
